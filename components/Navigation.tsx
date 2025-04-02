@@ -33,8 +33,12 @@ export default function Component() {
 
         {/* Actions */}
         <div className="hidden md:flex gap-2">
-          <Button variant="outline">Sign in</Button>
-          <Button>Sign Up</Button>
+          <Link href="/auth/login">
+            <Button variant="outline">Sign in</Button>
+          </Link>
+          <Link href="/auth/register">
+            <Button>Sign Up</Button>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
